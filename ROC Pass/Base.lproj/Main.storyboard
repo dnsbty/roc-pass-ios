@@ -1,26 +1,247 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--No Pass-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoPassViewController" title="No Pass" id="BYZ-38-t0r" customClass="ViewController" customModule="ROC_Pass" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="ROC_Pass" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqy-Ph-rZ5">
+                                <rect key="frame" x="20" y="20" width="374" height="471"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Scan the barcode on your ROC Pass to store it on this device. You will then be able to use the device to enter BYU sporting events.
+
+Please be aware that a pass can be stored on only one device.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="20" name="OpenSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzc-9O-wOX">
+                                <rect key="frame" x="20" y="661" width="374" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="yyY-3U-gVK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                                <state key="normal" title="I'll do it later">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanLater:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Edy-Ta-5Bt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-jJ-UGx" customClass="PrimaryButton" customModule="ROC_Pass" customModuleProvider="target">
+                                <rect key="frame" x="20" y="565" width="374" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="zp2-Op-a6r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                                <state key="normal" title="Scan your Pass">
+                                    <color key="titleColor" red="0.035294117647058823" green="0.074509803921568626" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanPass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAo-tE-Bxh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hSd-jJ-UGx" firstAttribute="top" secondItem="Fqy-Ph-rZ5" secondAttribute="bottom" multiplier="3:2" id="4La-4P-Z7J"/>
+                            <constraint firstItem="hSd-jJ-UGx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5db-ST-dz0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fqy-Ph-rZ5" secondAttribute="bottom" multiplier="3:2" id="DKZ-Bg-lC4"/>
+                            <constraint firstItem="Fqy-Ph-rZ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="J3t-2D-zoL"/>
+                            <constraint firstItem="Vzc-9O-wOX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Jac-ou-f5x"/>
+                            <constraint firstItem="Vzc-9O-wOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lu5-Zd-XXA"/>
+                            <constraint firstItem="hSd-jJ-UGx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NVk-KG-i1v"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vzc-9O-wOX" secondAttribute="bottom" constant="48" id="RR5-hS-pmu"/>
+                            <constraint firstItem="Fqy-Ph-rZ5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VHO-CY-5PF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fqy-Ph-rZ5" secondAttribute="trailing" id="bd9-He-YO8"/>
+                            <constraint firstItem="Vzc-9O-wOX" firstAttribute="top" secondItem="hSd-jJ-UGx" secondAttribute="bottom" constant="32" id="ryY-oJ-kMu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.086274509803921567" green="0.3529411764705882" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.066666666666666666" green="0.20784313725490194" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4La-4P-Z7J"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <segue destination="4hQ-xh-Z7D" kind="show" identifier="scanPass" id="wM0-PO-NfX"/>
+                        <segue destination="jMj-dz-iNc" kind="show" identifier="enableCamera" id="G4C-Sj-4VU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="375" y="122.53521126760563"/>
+        </scene>
+        <!--Enable Permission-->
+        <scene sceneID="LGE-gG-0ph">
+            <objects>
+                <viewController storyboardIdentifier="CameraPermissionViewController" title="Enable Permission" id="jMj-dz-iNc" customClass="CameraPermissionViewController" customModule="ROC_Pass" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dz3-c6-lLI"/>
+                        <viewControllerLayoutGuide type="bottom" id="2NQ-a8-dEc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qKc-SB-UDm" customClass="GradientView" customModule="ROC_Pass" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyu-zb-paw" customClass="PrimaryButton" customModule="ROC_Pass" customModuleProvider="target">
+                                <rect key="frame" x="20" y="565" width="374" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="HAT-ko-8AO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                                <state key="normal" title="Enable Camera Access">
+                                    <color key="titleColor" red="0.035294117649999998" green="0.074509803920000006" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enable:" destination="jMj-dz-iNc" eventType="touchUpInside" id="nfH-Yg-t1d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joA-1l-vVf">
+                                <rect key="frame" x="20" y="661" width="374" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="a3j-Lr-gv6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                                <state key="normal" title="Not right now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95r-CT-uLU">
+                                <rect key="frame" x="56" y="20" width="302" height="357"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Allow access to your camera so that you can scan and save your ROC Pass.">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="20" name="OpenSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kyu-zb-paw" firstAttribute="trailing" secondItem="qKc-SB-UDm" secondAttribute="trailingMargin" id="4rB-kh-mM9"/>
+                            <constraint firstItem="joA-1l-vVf" firstAttribute="trailing" secondItem="qKc-SB-UDm" secondAttribute="trailingMargin" id="CVN-bW-zU6"/>
+                            <constraint firstItem="joA-1l-vVf" firstAttribute="top" secondItem="kyu-zb-paw" secondAttribute="bottom" constant="32" id="IM9-im-p3t"/>
+                            <constraint firstItem="95r-CT-uLU" firstAttribute="trailing" secondItem="qKc-SB-UDm" secondAttribute="trailingMargin" constant="-36" id="JgQ-iF-8Kx"/>
+                            <constraint firstItem="2NQ-a8-dEc" firstAttribute="top" secondItem="joA-1l-vVf" secondAttribute="bottom" constant="48" id="Sh4-Cj-2hU"/>
+                            <constraint firstItem="95r-CT-uLU" firstAttribute="leading" secondItem="qKc-SB-UDm" secondAttribute="leadingMargin" constant="36" id="Y0R-Df-OIt"/>
+                            <constraint firstItem="joA-1l-vVf" firstAttribute="leading" secondItem="qKc-SB-UDm" secondAttribute="leadingMargin" id="bRn-V3-xOC"/>
+                            <constraint firstItem="kyu-zb-paw" firstAttribute="leading" secondItem="qKc-SB-UDm" secondAttribute="leadingMargin" id="coK-vM-n7v"/>
+                            <constraint firstItem="95r-CT-uLU" firstAttribute="top" secondItem="dz3-c6-lLI" secondAttribute="bottom" id="l0H-S0-43G"/>
+                            <constraint firstItem="kyu-zb-paw" firstAttribute="top" secondItem="95r-CT-uLU" secondAttribute="bottom" multiplier="3:2" id="lRR-0M-3FY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ech-2L-QFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="884.70764617691157"/>
+        </scene>
+        <!--Scan Pass-->
+        <scene sceneID="pKI-Da-XxM">
+            <objects>
+                <viewController title="Scan Pass" id="4hQ-xh-Z7D" customClass="ScannerViewController" customModule="ROC_Pass" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fZV-uJ-tcG"/>
+                        <viewControllerLayoutGuide type="bottom" id="4HS-Pf-Izn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RW5-ib-IvW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTg-9v-c5t">
+                                <rect key="frame" x="177.66666666666666" y="654" width="60" height="40"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.035294117649999998" green="0.074509803920000006" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="4hQ-xh-Z7D" eventType="touchUpInside" id="liZ-4B-FUy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="ohK-zN-np6">
+                                <rect key="frame" x="20" y="20" width="374" height="491"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ohK-zN-np6" firstAttribute="trailing" secondItem="RW5-ib-IvW" secondAttribute="trailingMargin" id="9Ec-pm-xkc"/>
+                            <constraint firstItem="ohK-zN-np6" firstAttribute="height" secondItem="RW5-ib-IvW" secondAttribute="height" multiplier="2:3" id="Zps-cE-O3u"/>
+                            <constraint firstItem="ohK-zN-np6" firstAttribute="leading" secondItem="RW5-ib-IvW" secondAttribute="leadingMargin" id="cFX-7g-85H"/>
+                            <constraint firstItem="dTg-9v-c5t" firstAttribute="centerX" secondItem="RW5-ib-IvW" secondAttribute="centerX" id="cVZ-wD-gwF"/>
+                            <constraint firstItem="ohK-zN-np6" firstAttribute="top" secondItem="fZV-uJ-tcG" secondAttribute="bottom" id="r2H-JS-rXl"/>
+                            <constraint firstItem="4HS-Pf-Izn" firstAttribute="top" secondItem="dTg-9v-c5t" secondAttribute="bottom" constant="42" id="vma-8n-9xA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="dTg-9v-c5t" id="Hgo-G1-Lk0"/>
+                        <outlet property="scanOverlay" destination="ohK-zN-np6" id="dIO-kF-nTv"/>
+                        <segue destination="jMj-dz-iNc" kind="show" identifier="enableCamera" id="N0x-Nk-aw8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zpz-NH-vxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ScanOverlay" width="353" height="103"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="G4C-Sj-4VU"/>
+    </inferredMetricsTieBreakers>
 </document>

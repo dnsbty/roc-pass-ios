@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9538DE251F67A7C700324EDB /* CameraPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538DE241F67A7C700324EDB /* CameraPermissionViewController.swift */; };
+		9557C45C1F66192700F9D7E7 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557C45B1F66192700F9D7E7 /* PrimaryButton.swift */; };
+		9557C45E1F66263400F9D7E7 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557C45D1F66263400F9D7E7 /* ScannerViewController.swift */; };
 		95BE50601F302DAF0088884C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BE505F1F302DAF0088884C /* AppDelegate.swift */; };
 		95BE50621F302DAF0088884C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BE50611F302DAF0088884C /* ViewController.swift */; };
 		95BE50651F302DAF0088884C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BE50631F302DAF0088884C /* Main.storyboard */; };
 		95BE50671F302DAF0088884C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BE50661F302DAF0088884C /* Assets.xcassets */; };
 		95BE506A1F302DAF0088884C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BE50681F302DAF0088884C /* LaunchScreen.storyboard */; };
+		95FDAD381F3C1C0C00AEABA1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDAD371F3C1C0C00AEABA1 /* GradientView.swift */; };
+		95FDAD481F3D79F200AEABA1 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD3D1F3D79F200AEABA1 /* LICENSE.txt */; };
+		95FDAD491F3D79F200AEABA1 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD3E1F3D79F200AEABA1 /* OpenSans-Bold.ttf */; };
+		95FDAD4A1F3D79F200AEABA1 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD3F1F3D79F200AEABA1 /* OpenSans-BoldItalic.ttf */; };
+		95FDAD4B1F3D79F200AEABA1 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD401F3D79F200AEABA1 /* OpenSans-ExtraBold.ttf */; };
+		95FDAD4C1F3D79F200AEABA1 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD411F3D79F200AEABA1 /* OpenSans-ExtraBoldItalic.ttf */; };
+		95FDAD4D1F3D79F200AEABA1 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD421F3D79F200AEABA1 /* OpenSans-Italic.ttf */; };
+		95FDAD4E1F3D79F200AEABA1 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD431F3D79F200AEABA1 /* OpenSans-Light.ttf */; };
+		95FDAD4F1F3D79F200AEABA1 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD441F3D79F200AEABA1 /* OpenSans-LightItalic.ttf */; };
+		95FDAD501F3D79F200AEABA1 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD451F3D79F200AEABA1 /* OpenSans-Regular.ttf */; };
+		95FDAD511F3D79F200AEABA1 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD461F3D79F200AEABA1 /* OpenSans-SemiBold.ttf */; };
+		95FDAD521F3D79F200AEABA1 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD471F3D79F200AEABA1 /* OpenSans-SemiBoldItalic.ttf */; };
+		95FDAD541F3D7E6100AEABA1 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD531F3D7E6100AEABA1 /* FontAwesome.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9538DE241F67A7C700324EDB /* CameraPermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermissionViewController.swift; sourceTree = "<group>"; };
+		9557C45B1F66192700F9D7E7 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		9557C45D1F66263400F9D7E7 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		95BE505C1F302DAF0088884C /* ROC Pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ROC Pass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BE505F1F302DAF0088884C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BE50611F302DAF0088884C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +41,19 @@
 		95BE50661F302DAF0088884C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95BE50691F302DAF0088884C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95BE506B1F302DAF0088884C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95FDAD371F3C1C0C00AEABA1 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		95FDAD3D1F3D79F200AEABA1 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = Open_Sans/LICENSE.txt; sourceTree = "<group>"; };
+		95FDAD3E1F3D79F200AEABA1 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Open_Sans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		95FDAD3F1F3D79F200AEABA1 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-BoldItalic.ttf"; path = "Open_Sans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		95FDAD401F3D79F200AEABA1 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Open_Sans/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		95FDAD411F3D79F200AEABA1 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBoldItalic.ttf"; path = "Open_Sans/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		95FDAD421F3D79F200AEABA1 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Italic.ttf"; path = "Open_Sans/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		95FDAD431F3D79F200AEABA1 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Open_Sans/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		95FDAD441F3D79F200AEABA1 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-LightItalic.ttf"; path = "Open_Sans/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		95FDAD451F3D79F200AEABA1 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Open_Sans/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		95FDAD461F3D79F200AEABA1 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "Open_Sans/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		95FDAD471F3D79F200AEABA1 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBoldItalic.ttf"; path = "Open_Sans/OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		95FDAD531F3D7E6100AEABA1 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +87,69 @@
 			isa = PBXGroup;
 			children = (
 				95BE505F1F302DAF0088884C /* AppDelegate.swift */,
-				95BE50611F302DAF0088884C /* ViewController.swift */,
-				95BE50631F302DAF0088884C /* Main.storyboard */,
-				95BE50661F302DAF0088884C /* Assets.xcassets */,
-				95BE50681F302DAF0088884C /* LaunchScreen.storyboard */,
 				95BE506B1F302DAF0088884C /* Info.plist */,
+				95FDAD351F3C1BA900AEABA1 /* Model */,
+				95FDAD341F3C1BA300AEABA1 /* View */,
+				95FDAD361F3C1BAF00AEABA1 /* Controller */,
+				95FDAD391F3D78FD00AEABA1 /* Assets */,
 			);
 			path = "ROC Pass";
+			sourceTree = "<group>";
+		};
+		95FDAD341F3C1BA300AEABA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95BE50631F302DAF0088884C /* Main.storyboard */,
+				95BE50681F302DAF0088884C /* LaunchScreen.storyboard */,
+				95FDAD371F3C1C0C00AEABA1 /* GradientView.swift */,
+				9557C45B1F66192700F9D7E7 /* PrimaryButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		95FDAD351F3C1BA900AEABA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		95FDAD361F3C1BAF00AEABA1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95BE50611F302DAF0088884C /* ViewController.swift */,
+				9557C45D1F66263400F9D7E7 /* ScannerViewController.swift */,
+				9538DE241F67A7C700324EDB /* CameraPermissionViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		95FDAD391F3D78FD00AEABA1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				95FDAD3A1F3D792400AEABA1 /* Fonts */,
+				95BE50661F302DAF0088884C /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		95FDAD3A1F3D792400AEABA1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				95FDAD531F3D7E6100AEABA1 /* FontAwesome.otf */,
+				95FDAD3D1F3D79F200AEABA1 /* LICENSE.txt */,
+				95FDAD3E1F3D79F200AEABA1 /* OpenSans-Bold.ttf */,
+				95FDAD3F1F3D79F200AEABA1 /* OpenSans-BoldItalic.ttf */,
+				95FDAD401F3D79F200AEABA1 /* OpenSans-ExtraBold.ttf */,
+				95FDAD411F3D79F200AEABA1 /* OpenSans-ExtraBoldItalic.ttf */,
+				95FDAD421F3D79F200AEABA1 /* OpenSans-Italic.ttf */,
+				95FDAD431F3D79F200AEABA1 /* OpenSans-Light.ttf */,
+				95FDAD441F3D79F200AEABA1 /* OpenSans-LightItalic.ttf */,
+				95FDAD451F3D79F200AEABA1 /* OpenSans-Regular.ttf */,
+				95FDAD461F3D79F200AEABA1 /* OpenSans-SemiBold.ttf */,
+				95FDAD471F3D79F200AEABA1 /* OpenSans-SemiBoldItalic.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +213,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				95BE506A1F302DAF0088884C /* LaunchScreen.storyboard in Resources */,
+				95FDAD4C1F3D79F200AEABA1 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				95FDAD511F3D79F200AEABA1 /* OpenSans-SemiBold.ttf in Resources */,
+				95FDAD4F1F3D79F200AEABA1 /* OpenSans-LightItalic.ttf in Resources */,
 				95BE50671F302DAF0088884C /* Assets.xcassets in Resources */,
+				95FDAD4D1F3D79F200AEABA1 /* OpenSans-Italic.ttf in Resources */,
+				95FDAD491F3D79F200AEABA1 /* OpenSans-Bold.ttf in Resources */,
+				95FDAD4B1F3D79F200AEABA1 /* OpenSans-ExtraBold.ttf in Resources */,
+				95FDAD4A1F3D79F200AEABA1 /* OpenSans-BoldItalic.ttf in Resources */,
+				95FDAD521F3D79F200AEABA1 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				95BE50651F302DAF0088884C /* Main.storyboard in Resources */,
+				95FDAD541F3D7E6100AEABA1 /* FontAwesome.otf in Resources */,
+				95FDAD481F3D79F200AEABA1 /* LICENSE.txt in Resources */,
+				95FDAD4E1F3D79F200AEABA1 /* OpenSans-Light.ttf in Resources */,
+				95FDAD501F3D79F200AEABA1 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +239,10 @@
 			files = (
 				95BE50621F302DAF0088884C /* ViewController.swift in Sources */,
 				95BE50601F302DAF0088884C /* AppDelegate.swift in Sources */,
+				9538DE251F67A7C700324EDB /* CameraPermissionViewController.swift in Sources */,
+				9557C45C1F66192700F9D7E7 /* PrimaryButton.swift in Sources */,
+				9557C45E1F66263400F9D7E7 /* ScannerViewController.swift in Sources */,
+				95FDAD381F3C1C0C00AEABA1 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QQWWMCLZJZ;
 				INFOPLIST_FILE = "ROC Pass/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dennisbeatty.ROC-Pass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QQWWMCLZJZ;
 				INFOPLIST_FILE = "ROC Pass/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dennisbeatty.ROC-Pass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +408,7 @@
 				95BE50701F302DAF0088884C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
