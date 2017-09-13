@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
 
 class ScannerViewController : UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession : AVCaptureSession?
@@ -120,8 +121,17 @@ class ScannerViewController : UIViewController, AVCaptureMetadataOutputObjectsDe
             
             if metadataObj.stringValue != nil {
                 UserDefaults.standard.set(metadataObj.stringValue, forKey: "code")
+                let pass = Pass()
+                pass.code = metadataObj.stringValue
+                pass.createdAt = Date()
+                
+                let realm = try! Realm()
+                
+                try! realm.write {
+                    realm.add(pass)
+                }
                 // TODO: tell the parent VC that a code is now present
-                // self.parentVC?.reloadCode()
+                self.parentVC?.printRealm()
                 self.dismiss(animated: true, completion: nil)
             }
         }

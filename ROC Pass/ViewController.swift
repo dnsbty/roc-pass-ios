@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
                 self.performSegue(withIdentifier: "enableCamera", sender: self)
             }
         }
+        printRealm()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +34,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func scanLater(_ sender: Any) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "scanPass") {
+            let newVC = segue.destination as! ScannerViewController
+            newVC.parentVC = self
+        }
+    }
+    
+    func printRealm() {
+        let realm = try! Realm()
+        let passes = realm.objects(Pass.self)
+        print("Passes: \(passes)")
     }
 }
 

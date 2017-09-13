@@ -15,6 +15,9 @@
 		95BE50651F302DAF0088884C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BE50631F302DAF0088884C /* Main.storyboard */; };
 		95BE50671F302DAF0088884C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BE50661F302DAF0088884C /* Assets.xcassets */; };
 		95BE506A1F302DAF0088884C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BE50681F302DAF0088884C /* LaunchScreen.storyboard */; };
+		95D80D2D1F68E7B7001E8295 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D80D2B1F68E7B7001E8295 /* Realm.framework */; };
+		95D80D2E1F68E7B7001E8295 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D80D2C1F68E7B7001E8295 /* RealmSwift.framework */; };
+		95D80D311F68ED3D001E8295 /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D80D301F68ED3D001E8295 /* Pass.swift */; };
 		95FDAD381F3C1C0C00AEABA1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDAD371F3C1C0C00AEABA1 /* GradientView.swift */; };
 		95FDAD481F3D79F200AEABA1 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD3D1F3D79F200AEABA1 /* LICENSE.txt */; };
 		95FDAD491F3D79F200AEABA1 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FDAD3E1F3D79F200AEABA1 /* OpenSans-Bold.ttf */; };
@@ -41,6 +44,9 @@
 		95BE50661F302DAF0088884C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95BE50691F302DAF0088884C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95BE506B1F302DAF0088884C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95D80D2B1F68E7B7001E8295 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		95D80D2C1F68E7B7001E8295 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		95D80D301F68ED3D001E8295 /* Pass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pass.swift; path = Model/Pass.swift; sourceTree = "<group>"; };
 		95FDAD371F3C1C0C00AEABA1 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		95FDAD3D1F3D79F200AEABA1 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = Open_Sans/LICENSE.txt; sourceTree = "<group>"; };
 		95FDAD3E1F3D79F200AEABA1 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Open_Sans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D80D2D1F68E7B7001E8295 /* Realm.framework in Frameworks */,
+				95D80D2E1F68E7B7001E8295 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,7 @@
 			children = (
 				95BE505E1F302DAF0088884C /* ROC Pass */,
 				95BE505D1F302DAF0088884C /* Products */,
+				95D80D2A1F68E7B4001E8295 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +105,15 @@
 			path = "ROC Pass";
 			sourceTree = "<group>";
 		};
+		95D80D2A1F68E7B4001E8295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95D80D2B1F68E7B7001E8295 /* Realm.framework */,
+				95D80D2C1F68E7B7001E8295 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95FDAD341F3C1BA300AEABA1 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +128,7 @@
 		95FDAD351F3C1BA900AEABA1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				95D80D301F68ED3D001E8295 /* Pass.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -162,6 +181,7 @@
 				95BE50581F302DAF0088884C /* Sources */,
 				95BE50591F302DAF0088884C /* Frameworks */,
 				95BE505A1F302DAF0088884C /* Resources */,
+				95D80D2F1F68E880001E8295 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,6 +252,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95D80D2F1F68E880001E8295 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95BE50581F302DAF0088884C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -241,6 +279,7 @@
 				95BE50601F302DAF0088884C /* AppDelegate.swift in Sources */,
 				9538DE251F67A7C700324EDB /* CameraPermissionViewController.swift in Sources */,
 				9557C45C1F66192700F9D7E7 /* PrimaryButton.swift in Sources */,
+				95D80D311F68ED3D001E8295 /* Pass.swift in Sources */,
 				9557C45E1F66263400F9D7E7 /* ScannerViewController.swift in Sources */,
 				95FDAD381F3C1C0C00AEABA1 /* GradientView.swift in Sources */,
 			);
@@ -366,6 +405,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QQWWMCLZJZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ROC Pass/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -380,6 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QQWWMCLZJZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ROC Pass/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
